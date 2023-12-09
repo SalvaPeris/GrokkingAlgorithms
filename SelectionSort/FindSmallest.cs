@@ -1,4 +1,4 @@
-﻿namespace SelectionSort
+﻿namespace SelectionSortAlgorithms
 {
     public static class FindAlgorithms
     {
@@ -6,9 +6,9 @@
         {
             int smallest = numbers[0];
             int smallestIndex = 0;
-            
-            foreach (var i in numbers) {
-                if(i < smallest)
+
+            for (int i = 0; i < numbers.Length; i++) {
+                if(numbers[i] < smallest)
                 {
                     smallest = numbers[i];
                     smallestIndex = i;
